@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main () 
-{
+int main (){
 		// Input values for a, b, and c
 		int a, b, c;
 		
