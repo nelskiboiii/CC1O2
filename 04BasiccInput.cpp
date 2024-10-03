@@ -1,22 +1,15 @@
-#include <iostream>
+#include <iostream> 
+
 using namespace std;
 
-int main()
-{
-	
+int main() {
 	string Nickname, cyl, School;
 	
 	cout << "Enter you nickname: ";
 	cin >> Nickname;
-	cout << "Your Nickname is " << Nickname << endl;
-	
 	cout << "Enter your Course-Year Level:";
 	cin >> cyl;
-	cout << "Your Course-Year Level is " << cyl << endl;
-	
-	cout << "Enter your Scool:";
+	cout << "Enter your School:";
 	cin >> School;
-	cout << "Your School is " << School << endl;
-	
+	cout << "Wow Congrats " << Nickname << "! " << cyl << " is a nice course. And your are studying in" << School << " which is one of the Center of Excellence in Tertiary Education";
 	return 0;
-}
