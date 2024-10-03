@@ -1,9 +1,8 @@
 #include <iostream>
+
 using namespace std;
 
 int main () {
-
-	cout << "HOWDY LOURDENIAN BPROGRAMMERS!";
-	RETURN 0;
-
+	cout << "HOWDY LOURDENIAN PROGRAMMERS!";
+	Return 0;
 }
