@@ -37,16 +37,17 @@ int main () {
 	cout << "Enter pound to php: "; 
 	cin >> poundToPhp;
 	cout << "**************************************************\n";
-	float totalCostPhp, sugarCostPhp, RiceCostPhp, SardinesCostPhp, CoffeeCostPhp, MilkCostPhp;
-	sugarCostPhp = (sugarPriceUSD * sugarQty);
-	RiceCostPhp = ( ricePricePound * riceQty);
-	SardinesCostPhp = (sardinesPricePound * sardinesQty);
-	CoffeeCostPhp = (coffeePriceUSD * coffeeQty);
-	MilkCostPhp = (milkPriceUSD * milkQty);
-	totalCostPhp = sugarCostPhp + RiceCostPhp + SardinesCostPhp + CoffeeCostPhp + MilkCostPhp;
+	float totalCostPhp, sugarCostPhp, ricePricePhp, sardinesPricePhp, coffeePricePhp, milkPricePhp;
+	sugarCostPhp = (sugarPriceUSD * usdToPhp * sugarQty);
+	ricePricePhp = ( ricePricePound * poundToPhp * riceQty);
+	sardinesPricePhp = (sardinesPricePound * poundToPhp * sardinesQty);
+	coffeePricePhp = (coffeePriceUSD * usdToPhp * coffeeQty);
+	milkPricePhp = (milkPriceUSD * usdToPhp * milkQty);
+	totalCostPhp = sugarCostPhp + ricePricePound + sardinesPricePound + coffeePriceUSD + milkPriceUSD;
+	cout << "**************************************************\n";
 	cout <<  "Customer, you need to pay: " << totalCostPhp << endl;
+	cout << "**************************************************\n";
 	return 0;
 }
 	
 	
-
