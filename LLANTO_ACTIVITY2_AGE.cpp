@@ -7,10 +7,10 @@ int main()
   int response;
   cout << "What is your age?:  ";
   cin >> response;
-  if (response < 16) { 
+  if (response <16) { 
     cout << " You are too young to drive";
 }
-  else if (response <= 16 ) {
+  else if (response ==16 ) {
     cout <<  " Better clear the road";
 }
   else if (response >16) {
