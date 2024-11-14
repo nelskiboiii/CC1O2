@@ -7,7 +7,7 @@ int main ()
 	int response;
 	cout << "Enter the Temperature?: ";
 	cin >> response;
-	if (response <= 32)  {
+	if (response < 32)  {
 		cout << "Bring heavy jacket";
 	} 
 	else if (response == 32 || response <= 50) {
